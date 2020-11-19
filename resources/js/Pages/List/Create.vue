@@ -1,7 +1,7 @@
 <template>
     <app-layout>
         <template #backlink>
-            <a
+            <inertia-link
                 :href="route('lists')"
                 class="text-xs text-gray-600 flex flex-row"
                 ><svg
@@ -18,7 +18,7 @@
                         d="M15 19l-7-7 7-7"
                     ></path>
                 </svg>
-                <span>Lists</span></a
+                <span>Lists</span></inertia-link
             >
         </template>
         <template #header>

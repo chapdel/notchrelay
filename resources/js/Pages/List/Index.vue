@@ -2,11 +2,11 @@
     <app-layout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                List
-                <a
+                Lists
+                <inertia-link
                     :href="route('lists.create')"
                     class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25 transition ease-in-out duration-150 float-right"
-                    >Add new list</a
+                    >Add new list</inertia-link
                 >
             </h2>
         </template>
@@ -14,7 +14,7 @@
             <div class="py-6">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div
-                        class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-4"
+                        class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-4 w-full"
                     >
                         <t-table
                             :headers="[
@@ -30,7 +30,7 @@
                         >
                             <template slot="row" slot-scope="props">
                                 <tr :class="props.trClass">
-                                    <a
+                                    <inertia-link
                                         :href="
                                             route('lists.show', props.row.uid)
                                         "
@@ -39,7 +39,7 @@
                                         <td :class="props.tdClass">
                                             {{ props.row.title }}
                                         </td>
-                                    </a>
+                                    </inertia-link>
                                     <td :class="props.tdClass">
                                         {{ props.row.uid }}
                                     </td>
