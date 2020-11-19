@@ -386,7 +386,7 @@
                                     : ''
                             "
                         >
-                            <a
+                            <inertia-link
                                 :href="route('dashboard')"
                                 class="flex items-center"
                             >
@@ -406,7 +406,7 @@
                                 <span class="mx-2 text-gray-300 hidden md:block"
                                     >Dashboard</span
                                 >
-                            </a>
+                            </inertia-link>
                         </li>
                         <li
                             class="px-2 py-3 hover:bg-gray-900  rounded"
@@ -418,7 +418,7 @@
                                     : ''
                             "
                         >
-                            <a :href="route('lists')" class="flex items-center">
+                            <inertia-link :href="route('lists')" class="flex items-center">
                                 <svg
                                     class="w-6 text-gray-500"
                                     fill="none"
@@ -436,7 +436,7 @@
                                 <span class="mx-2 text-gray-300 hidden md:block"
                                     >Lists</span
                                 >
-                            </a>
+                            </inertia-link>
                         </li>
                         <li
                             class="px-2 py-3 hover:bg-gray-900  rounded"
@@ -445,7 +445,7 @@
                                 route().current('users') ? 'bg-gray-900' : ''
                             "
                         >
-                            <a :href="route('users')" class="flex items-center">
+                            <inertia-link :href="route('users')" class="flex items-center">
                                 <svg
                                     class="w-6 text-gray-500"
                                     fill="none"
@@ -462,7 +462,7 @@
                                 <span class="mx-2 text-gray-300 hidden md:block"
                                     >Users</span
                                 >
-                            </a>
+                            </inertia-link>
                         </li>
                     </ul>
                 </div>
