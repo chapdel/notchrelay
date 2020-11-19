@@ -29,7 +29,7 @@ class GiveRoleToNewUser
         $event->user->assignRole(Role::findByName('user'));
         $event->user->lists()->create([
             'title' => 'Default',
-            'description' => 'Your default contact list',
+            'description' => 'Your default contacts list',
             'uid' => Lists::uid()
         ]);
     }
