@@ -468,7 +468,7 @@
                                 </svg>
                                 <span>Dashboard</span>
                             </intertia-link>
-                            <intertia-link
+                            <inertia-link
                                 :href="route('register')"
                                 v-else
                                 class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 flex flex-row"
@@ -490,7 +490,7 @@
                                     ></path>
                                 </svg>
                                 <span>Getting Started</span>
-                            </intertia-link>
+                            </inertia-link>
                         </li>
                     </ul>
                 </div>
