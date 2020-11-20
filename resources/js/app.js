@@ -11,7 +11,7 @@ import VueTailwind from "vue-tailwind";
 import settings from "./relay.js";
 import VueMoment from "vue-moment";
 import moment from "moment-timezone";
-import { InertiaProgress } from '@inertiajs/progress'
+/* import { InertiaProgress } from '@inertiajs/progress'
 
 InertiaProgress.init({
     // The color of the progress bar.
@@ -22,17 +22,17 @@ InertiaProgress.init({
 
   // Whether the NProgress spinner will be shown.
   showSpinner: false,
-})
+}) */
 Vue.use(VueMoment, moment);
 
 Vue.mixin({ methods: { route } });
 Vue.mixin({
-  methods: {
-    hasRole: function(role) {
-      return this.$page.auth.roles.includes(role)
+    methods: {
+        hasRole: function(role) {
+            return this.$page.auth.roles.includes(role);
+        }
     }
-  }
-})
+});
 Vue.use(InertiaApp);
 Vue.use(InertiaForm);
 Vue.use(PortalVue);
