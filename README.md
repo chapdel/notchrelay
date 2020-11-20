@@ -28,7 +28,9 @@ Official documentation will be available soon.
 
 ## Contributing
 
-Please see [contributing.md](contributing.md) for details and a todolist.
+This is a fairly simple wrapper, but it has been made much better by contributions from those using it. If you'd like to suggest an improvement, please raise an issue to discuss it before making your pull request.
+
+Pull requests for bugs are more than welcome - please explain the bug you're trying to fix in the message.
 
 ## Security
 
