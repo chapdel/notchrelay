@@ -14,9 +14,10 @@ class ContactController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($slug)
     {
-        //
+        $list = Lists::where('user_id', auth()->id())->firstOrFail();
+        return response()->json($list->contacts);
     }
 
     /**

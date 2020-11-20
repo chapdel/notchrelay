@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ListController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,4 +20,6 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/contacts', [ContactController::class, 'subscribe']);
     Route::put('/contacts', [ContactController::class, 'subscribeOrUpdate']);
     Route::delete('/contacts', [ContactController::class, 'unsubscribe']);
+    Route::get('/lists', [ListController::class, 'all']);
+    Route::get('/lists/{uid}', [ContactController::class, 'index']);
 });
