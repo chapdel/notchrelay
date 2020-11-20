@@ -3,12 +3,11 @@ Notch Relay is free alternative of MailChimp for newsletter
 # Table of Contents
 
 1. [Features](#features)
-2. [Installation](#installation)
-3. [Documentation](#documentation)
-4. [Contributing](#contributing)
-5. [Security](#security)
-6. [Credits](#credits)
-7. [License](#license)
+2. [Documentation](#documentation)
+3. [Contributing](#contributing)
+4. [Security](#security)
+5. [Credits](#credits)
+6. [License](#license)
 
 ## Features
 
