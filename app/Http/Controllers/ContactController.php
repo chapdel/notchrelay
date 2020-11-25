@@ -17,7 +17,7 @@ class ContactController extends Controller
     public function index($slug)
     {
         $list = Lists::where('user_id', auth()->id())->firstOrFail();
-        return response()->json($list->contacts);
+        return response()->json($list->contacts()->get());
     }
 
     /**
