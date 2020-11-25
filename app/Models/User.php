@@ -59,10 +59,29 @@ class User extends Authenticatable
      */
     protected $appends = [
         'profile_photo_url',
+        'lists_nb',
+        'contacts_nb',
     ];
 
     public function lists()
     {
         return $this->hasMany(Lists::class);
+    }
+
+    public function getListsNbAttribute()
+    {
+        return count($this->lists()->get());
+    }
+
+    public function getContactsNbAttribute()
+    {
+        $lists = $this->lists()->get();
+
+        $contact = 0;
+
+        foreach ($lists as $list) {
+            $contact += $list->contacts_nb;
+        }
+        return $contact;
     }
 }

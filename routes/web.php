@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\ListController;
 use App\Http\Controllers\UserController;
-use App\Models\Lists;
+use App\Models\Contact;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -20,6 +20,7 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('Index');
 })->name('home');
+
 
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::get('/dashboard', function () {

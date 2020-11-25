@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ListController;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*

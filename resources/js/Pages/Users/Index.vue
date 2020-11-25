@@ -15,6 +15,8 @@
                             :headers="[
                                 { value: 'name', text: 'Name' },
                                 { value: 'email', text: 'E-mail' },
+                                { value: 'lists_nb', text: 'Lists' },
+                                { value: 'contacts_nb', text: 'Subscribers' },
                                 {
                                     value: 'email_verified_at',
                                     text: 'Verified'

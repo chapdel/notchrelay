@@ -44,16 +44,21 @@ class ContactController extends Controller
         ]);
 
         $list = Lists::where('uid', $request->uid)->first();
-        $list->contacts()->Create([
+        $contact = $list->contacts()->Create([
             'email' => $request->email,
             'status' => 'enabled'
         ]);
 
-        /* if ($request->ajax()) {
-            return response()->json([
-                'status' => 'success'
-            ]);
-        } */
+        if ($request->data) {
+
+            foreach ($request->data as $key => $value) {
+                if(array_key_exists($key, $contact->attributesToArray())) {
+                    $contact->name= $value;
+                }
+            }
+
+            $contact->save();
+        }
 
         return response()->json();
     }
